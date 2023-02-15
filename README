@@ -1,0 +1,37 @@
+1. Create a customized Docker container from the current version of Python that deploys a simple python script.
+
+To install Docker on a Mac, you can follow these steps:
+
+Go to the Docker website at https://www.docker.com/products/docker-desktop and click the "Download for Mac" button.
+
+Follow the instructions to download the Docker Desktop .dmg file.
+
+Double-click the downloaded file to open the Docker Desktop installer.
+
+Drag the Docker icon to the Applications folder to install Docker.
+
+Open Docker Desktop from the Applications folder and follow the setup wizard to complete the installation.
+
+Once Docker Desktop is installed, you can use the Docker command-line interface (CLI) to interact with Docker and manage containers.
+
+
+
+To create a Dockerfile, follow these steps:
+
+Open a text editor and create a new file named "Dockerfile".
+
+In the Dockerfile, specify the base image to use with the FROM keyword. For example, to use the latest version of Python, you can use the following command: FROM python:latest.
+
+Use the WORKDIR command to set the working directory for the container. For example, you can use the following command to set the working directory to /app: WORKDIR /app.
+
+Use the COPY command to copy the files you want to include in the container. For example, to copy the app.py file in the current directory to the container's working directory, use the following command: COPY app.py /app.
+
+Use the RUN command to execute commands in the container. For example, to install dependencies for your Python application, you can use the following command: RUN pip install -r requirements.txt.
+
+Use the EXPOSE command to specify which ports to expose from the container. For example, to expose port 80, use the following command: EXPOSE 80.
+
+Use the CMD command to specify the command to run when the container starts. For example, to start the Python application, you can use the following command: CMD ["python", "app.py"].
+
+Save the Dockerfile.
+
+You can then use the docker build command to build an image from the Dockerfile, and the docker run command to start a container from the image.
