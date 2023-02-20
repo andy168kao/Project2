@@ -10,4 +10,4 @@ lint:
 	pylint --disable=C,R script.py
 
 
-all: install lint test
+all: install format lint 
