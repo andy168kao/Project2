@@ -1,4 +1,4 @@
-venv/
+venv/t 
 .env
 __pycache__/
 nameofenvironment/
