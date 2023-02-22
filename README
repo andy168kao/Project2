@@ -1,6 +1,6 @@
 1. Create a customized Docker container from the current version of Python that deploys a simple python script.
 
-To install Docker on a Mac, you can follow these steps: 
+To install Docker on a Mac, you can follow these steps:
 
 Go to the Docker website at https://www.docker.com/products/docker-desktop and click the "Download for Mac" button.
 
