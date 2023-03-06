@@ -1,11 +1,7 @@
-FROM python:latest
-
-WORKDIR /app
-
-COPY requirements.txt .
-
-RUN pip install -r requirements.txt
-
-COPY app.py .
-
-CMD [ "python", "./app.py" ]
+FROM python:3.8.10
+RUN mkdir /Project2
+WORKDIR /Project2
+COPY . /Project2
+RUN pip3 install -r requirements.txt
+EXPOSE 5000
+CMD ["python3", "app.py"]
